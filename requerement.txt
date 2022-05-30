@@ -1,0 +1,20 @@
+Requerimientos de implementación básica de la aplicación:
+ 
+ 
+1.	✓Registro usuario local, fb y Google.
+2.	Posibilidad de publicar con validación previa de admin.
+3.	Georreferenciación
+4.	✓Check in y check out
+5.	Reserva
+6.	Estado: disponible/ocupado actualizado tiempo real
+7.	Sistema de puntuación de usuarios Arrendador y arrendatario
+8.	Comentarios de usuarios y también del arrendador respecto del usuario, previa revisión del administrador
+9.	Medios de pago electrónicos
+10.	Anular reserva
+11.	Opción de pago alternativa: Trueque a convenir entre los 2 usuarios que tranzan
+12.	Opción de cargo por una garantía a tarjeta de crédito/débito
+13.	Opción de agregar avisos publicitarios visibles en la app
+14.	Opción de dar prioridad a publicación a cambio de pago (ej: mercadolibre)
+15.	✓Filtros de búsqueda
+16.	✓Categorías
+17.	✓Posibilidad de pwa
