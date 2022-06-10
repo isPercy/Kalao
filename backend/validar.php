@@ -1,14 +1,14 @@
 <?php
 include('db.php');
 $usuario=$_POST['usuario'];
-$contraseña=$_POST['contraseña'];
+$contraseña=$_POST['pass'];
 session_start();
 $_SESSION['usuario']=$usuario;
 
 
-$conexion=mysqli_connect("localhost","root","12345","loggin");
+$conexion=mysqli_connect("localhost","root","","");
 
-$consulta="SELECT*FROM usuario where correo='$correo' and pass='$contraseña'";
+$consulta="SELECT*FROM usuario where correo='$correo' and pass='$pass'";
 $resultado=mysqli_query($conexion,$consulta);
 
 $filas=mysqli_num_rows($resultado);
