@@ -10,11 +10,11 @@
 }
 
 body{
-    background-image: url(../img/bg4.jpg);
+    /* background-image: url(../img/bg4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 main{
@@ -25,7 +25,7 @@ main{
 }
 
 .cnav{
-    background-color: rgba(0, 100, 201, 0.2);
+    background-color: rgba(128, 0, 255, 0.9);
 }
 
 .contenedor__todo{
