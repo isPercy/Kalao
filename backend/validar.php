@@ -1,30 +1,36 @@
 <?php
 include('db.php');
-$usuario=$_POST['usuario'];
-$contraseña=$_POST['pass'];
+/* Getting the value of the input with the name "Correo" and storing it in the variable . */
+$Correo=$_POST['Correo'];
+$Pass=$_POST['Pass'];
 session_start();
-$_SESSION['usuario']=$usuario;
+/* Setting the session variable `Kalao` to the value of the variable ``. */
+$_SESSION['Kalao']=$usuario;
 
 
 $conexion=mysqli_connect("localhost","root","","");
 
-$consulta="SELECT*FROM usuario where correo='$correo' and pass='$pass'";
+/* Checking if the user exists in the database. */
+$consulta="SELECT*FROM usuario where Correo='$Correo' and Pass='$Pass'";
 $resultado=mysqli_query($conexion,$consulta);
 
 $filas=mysqli_num_rows($resultado);
 
+/* Checking if the user exists in the database. If it does, it will redirect to the home page. If it
+doesn't, it will display an error message. */
 if($filas){
   
-    header("location:home.php");
+    header("location:../frontend/inicio.html");
 
 }else{
     ?>
     <?php
-    include("index.html");
-
+    include("inicio.html");
   ?>
   <h1>ERROR DE AUTENTIFICACION</h1>
   <?php
 }
+/* Freeing the memory associated with the result. */
 mysqli_free_result($resultado);
+/* Closing the connection to the database. */
 mysqli_close($conexion);

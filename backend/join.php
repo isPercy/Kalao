@@ -31,8 +31,8 @@
                 <!--Login-->
                 <form action="validar.php" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
-                    <input type="text" name="correo" placeholder="Correo Electronico">
-                    <input type="password" name="pass" placeholder="Contraseña">
+                    <input type="text" name="Correo" placeholder="Correo Electronico">
+                    <input type="password" name="Pass" placeholder="Contraseña">
                     <button>Entrar</button>
                 </form>
 
