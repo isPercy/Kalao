@@ -1,7 +1,6 @@
 <?php
 
 /* Connecting to the database. */
-$conexion=mysqli_connect("localhost","root","","");
+$conexion = mysqli_connect("localhost","root","","kalao");
 
 ?>
-<H1>CONECTADO</H1>
