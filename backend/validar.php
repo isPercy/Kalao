@@ -16,8 +16,6 @@ $resultado=mysqli_query($conexion,$consulta);
 
 $filas=mysqli_num_rows($resultado);
 
-/* Checking if the user exists in the database. If it does, it will redirect to the home page. If it
-doesn't, it will display an error message. */
 if($filas){
   
     header("location:../frontend/inicio.html");
