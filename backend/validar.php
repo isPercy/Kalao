@@ -17,14 +17,14 @@ $filas=mysqli_num_rows($resultado);
 
 if($filas){
   
-    header("location:home.php");
+  header("location:../frontend/home.php");
 
 }else{
     ?>
     <?php
     include("join.php");
     ?>
-    <h3 class="bad">ERROR DE AUTENTIFICACION</h3>
+    <h3 style="color: #ff0000">¡ERROR DE AUTENTIFICACION!</h3>
     <?php
 }
 mysqli_free_result($resultado);
