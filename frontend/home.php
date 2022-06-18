@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalao arriendos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <LINK rel=StyleSheet HREF="../css/style.css" TYPE="text/css">
+    <link rel=StyleSheet HREF="../css/style.css" TYPE="text/css">
 </head>
 <body>
-  
+  <script src="../js/app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- INICIO DEL NAV -->
