@@ -88,29 +88,31 @@
                 </div>
               </div>
             </div>
-
+            
             <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary pl-4">Ver</button>
-                      <button type="button" class="btn btn-sm btn-outline-primary">agregar</button>
-                    </div>
-                    <small class="text-muted">$99.990/mes</small>
-                  </div>
-                </div>
+              <div class="card shadow-sm" id="items">
+                
               </div>
             </div>
           </div>
         </div>
       </div>
-      
-      <div class="container pt-5">
-        <h1>Lo más visto</h1>
+      <!-- CREANDO TEMPLATES PARA LAS TARJETAS-->
+      <template id="template-card">
+      <div class="col-12 mb-2">
+        <div class="card">
+          <div class="card-body">
+            <h5>Titulo</h5>
+            <p>precio</p>
+            <button class="btn btn-dark">Comprar</button>
+          </div>
+        </div>
       </div>
+    </template>
+
+    <div class="container pt-5">
+      <h1>Lo más visto</h1>
+    </div>
 
       <div class="album py-3">
         <div class="container">
@@ -213,5 +215,6 @@
         </div>
       </div>
     </div>
+  </header>
 </body>
 </html>

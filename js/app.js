@@ -1,16 +1,25 @@
-/* Waiting for the DOM to be loaded before executing the function. */
-document.addEventListener('DOMContentLoaded', () =>{
+//const cards = document.getElementById('cards')
+const items = document.getElementById('items')
+const templateCard = document.getElementById('template-card')
+//const fragment = document.createDocumentFragment()
+
+document.addEventListener('DOMContentLoaded', () => {
     fetchData()
 })
-/**
- * It fetches the data from the JSON file and then logs it to the console.
- */
-const fetchData = async() => {
+// Traer productos
+const fetchData = async () => {
     try {
-        const res = await fetch('productos.json')
-        const data = await res.json()
-        console.log(data)
-    } catch (error) {
+        const response = await fetch('../api/productos.json')
+        const data = await response.json()
+        //console.log(data)
+        pintarCards(data)
+    }
+    catch (error) {
         console.log(error)
     }
+}
+
+// Pintar productos
+const pintarCards = data => {
+    console.log(data)
 }
