@@ -1,7 +1,7 @@
-//const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const templateCard = document.getElementById('template-card')
-//const fragment = document.createDocumentFragment()
+const fragment = document.createDocumentFragment()
+const cards = document.getElementById('cards')
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData()
@@ -21,5 +21,12 @@ const fetchData = async () => {
 
 // Pintar productos
 const pintarCards = data => {
-    console.log(data)
+    data.forEach(productos => {
+        templateCard.querySelector('h3').textContent = productos.title
+        templateCard.querySelector('p').textContent = productos.precio
+        //templateCard.querySelector('button').dataset.id = productos.id
+        //const clone = templateCard.cloneNode(true)
+        fragment.appendChild(clone)
+    })
+    cards.appendChild(fragment)
 }
