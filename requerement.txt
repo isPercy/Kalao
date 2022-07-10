@@ -1,7 +1,7 @@
 Requerimientos de implementación básica de la aplicación:
  
  
-1.	✓Registro usuario local, fb y Google.
+1.	Registro usuario local✓, fb y Google.
 2.	Posibilidad de publicar con validación previa de admin.
 3.	Georreferenciación
 4.	✓Check in y check out
