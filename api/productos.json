@@ -1,12 +1,12 @@
 [
   {
-    "precio": 500,
+    "precio": 800,
     "id": 1,
     "title": "Café",
     "thumbnailUrl": "https://picsum.photos/id/0/600"
   },
   {
-    "precio": 300,
+    "precio": 5000,
     "id": 2,
     "title": "Pizza",
     "thumbnailUrl": "https://picsum.photos/id/10/600"
@@ -18,19 +18,19 @@
     "thumbnailUrl": "https://picsum.photos/id/20/600"
   },
   {
-    "precio": 50,
+    "precio": 1500,
     "id": 4,
     "title": "Sandía",
     "thumbnailUrl": "https://picsum.photos/id/30/600"
   },
   {
-    "precio": 10,
+    "precio": 300,
     "id": 5,
     "title": "Mango",
     "thumbnailUrl": "https://picsum.photos/id/40/600"
   },
   {
-    "precio": 150,
+    "precio": 1600,
     "id": 6,
     "title": "Chela",
     "thumbnailUrl": "https://picsum.photos/id/50/600"

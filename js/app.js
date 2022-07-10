@@ -20,11 +20,11 @@ const fetchData = async () => {
 // Pintar productos
 const pintarCards = data => {
     //console.log(data)
-    data.forEach(item => {
-        //console.log(item)
-        templateCard.querySelector('h5').textContent = item.title
-        templateCard.querySelector('p').textContent = item.precio
-        templateCard.querySelector('img').setAttribute("src", item.thumbnailUrl)
+    data.forEach(producto => {
+        //console.log(producto)
+        templateCard.querySelector('h3').textContent = producto.title
+        templateCard.querySelector('small').textContent = producto.precio
+        templateCard.querySelector('img').setAttribute("src", producto.thumbnailUrl)
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
     })

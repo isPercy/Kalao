@@ -51,11 +51,11 @@
     <h1>En oferta</h1>
   </div>
 
-  <!-- <div class="album py-3"> -->
-  <div class="container">
-    <div class="row" id="cards"></div>
+  <div class="album py-3"> 
+    <div class="container">
+      <div class="row" id="cards"></div>
+    </div>
   </div>
-  <!-- </div> -->
 
   <!-- CREANDO TEMPLATES PARA LAS TARJETAS-->
   <template id="template-card">
@@ -63,9 +63,14 @@
       <div class="card">
         <img src="" class="img-card rounded-top" alt="producto" style="height: 10%">
         <div class="card-body ">
-          <h5>Titulo</h5>
-          <p>precio</p>
-          <button class="btn btn-dark">Comprar</button>
+          <h3>Titulo</h3>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary pl-4">Ver</button>
+              <button type="button" class="btn btn-sm btn-outline-primary">agregar</button>
+            </div>
+            <p class="text-muted">$<small class="text-muted">$0/mes</small>/mes</p>
+          </div>
         </div>
       </div>
     </div>
